@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Assistant", sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+}
+
+
+
+
+
+.contactMain {
+    min-height: 100vh;
+    /* background-image: url(../images/main-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+    padding: 40px 25px;
+    padding-left: 460px;
+    padding-bottom: 0;
+    position: relative;
+}
+.bgImg, .bgImgSm {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -4;
+}
+.bgImgSm {
+    display: none;
+}
+
+
+
+.contactTopWrap {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    padding-top: 160px;
+}
+
+
+
+.contactLeft {
+    width: 55%;
+}
+
+
+.flagImg {
+    width: 49vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+}
+
+.familyImg, .familyImgSm {
+    width: 525px;
+    position: absolute;
+    left: 0;
+    top: 27%;
+    /* bottom: -5px; */
+    z-index: -1;
+}
+.familyImgSm {
+    display: none;
+}
+
+
+
+.bigText {
+    width: 100%;
+    position: relative;
+    z-index: -2;
+}
+
+.bigTextSm {
+    display: none;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+.contactRight {
+    width: 45%;
+}
+.companyImg {
+    width: 45vw;
+    max-width: 715px;
+    position: absolute;
+    top: 40px;
+    right: 25px;
+}
+
+
+
+
+
+.formHeading {
+    width: 100%;
+    background-color: #f58433;
+    padding: 6px 0;
+}
+.formHeading h2 {
+    font-size: 41px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+}
+
+.contactForm form {
+    width: 100%;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+.contactForm form input {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #000;
+    background-color: transparent;
+    margin-bottom: 15px;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.contactForm form input::placeholder {
+    color: #000;
+}
+
+.contactForm form p {
+    font-size: 16px;
+    padding-right: 5px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.contactForm form p.sizeText {
+    margin-top: -5px;
+}
+
+.contactForm form p input {
+    width: unset;
+    height: unset;
+    margin-bottom: 0;
+    scale: 1.8;
+}
+
+.contactForm form p label {
+    margin-right: 10px;
+}
+
+.contactForm form button {
+    width: 100%;
+    height: 45px;
+    font-size: 41px;
+    font-weight: 400;
+    background-color: #f58433;
+    color: #fff;
+    border: none;
+    line-height: 35px;
+}
+
+
+
+
+
+
+footer {
+    padding: 20px 0;
+    background-color: #162b75;
+    border-top: 3px solid #fff;
+    position: relative;
+    z-index: -2;
+}
+
+footer img {
+    width: 50%;
+    max-width: 880px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 2000px) {
+    .contactMain {
+        display: flex;
+        justify-content: center;
+    }
+
+    .familyImg {
+        width: 700px;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 1260px) {
+    .contactMain {
+        padding-left: 370px;
+    }
+    .familyImg {
+        width: 410px;
+    }
+}
+
+
+
+@media (max-width: 1190px) {
+    .contactForm form input {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .contactMain {
+        padding-left: 25px;
+        padding-bottom: 40px;
+    }
+    .contactTopWrap {
+        flex-direction: column;
+    }
+    .contactLeft {
+        width: 100%;
+        padding-left: 300px;
+        margin-bottom: 30px;
+    }
+
+    .familyImg {
+        width: 345px;
+        top: 17%;
+        z-index: 0;
+    }
+    .contactRight {
+        width: 100%;
+    }
+
+    .bigText {
+        display: none;
+    }
+
+    .bigTextSm {
+        max-width: 100%;
+        display: block;
+    }
+
+
+
+    footer {
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 830px) {
+    .contactTopWrap {
+        padding-top: 128px;
+    }
+    .contactLeft {
+        padding-left: 270px;
+    }
+    .familyImg {
+        width: 300px;
+        top: 13%;
+    }
+    .companyImg {
+        width: 62vw;
+        top: 57px;
+    }
+}
+
+
+
+@media (max-width: 700px) {
+    .bgImg {
+        display: none;
+    }
+    .bgImgSm {
+        display: block;
+    }
+    .contactLeft {
+        padding-left: 40%;
+    }
+    .familyImg {
+        width: 43vw;
+        top: 10%;
+    }
+}
+
+
+
+
+@media (max-width: 500px) {
+    .contactTopWrap {
+        padding-top: 19%;
+    }
+    .contactLeft {
+        padding-left: 36%;
+    }
+    .familyImg {
+        display: none;
+    }
+    .familyImgSm {
+        display: block;
+        width: 41vw;
+        top: 8%;
+        left: 0;
+        z-index: 0;
+    }
+    .companyImg {
+        width: 60vw;
+    }
+}
